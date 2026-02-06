@@ -1,0 +1,269 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+#full-page{
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-bar-responsive{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+#nav-bar-links{
+display: flex;
+justify-content: space-around;
+align-items: center;
+text-decoration: none;
+width: 500px;
+height: 100%;
+}
+
+#img-logo{
+  width: 500px;
+  border-radius: 50%;
+  padding-left: 15px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 15px;
+  animation-name: logoAnimation;
+  animation-duration: 1s;
+}
+
+#img-logo img{
+  width: 80px;
+}
+
+@media (max-width: 600px) {
+  #img-logo {
+    width: 300px;
+    padding: 30px 10px;
+  }
+
+  #img-logo img{
+  width: 50px;
+  padding-top: 17px;
+}
+#nav-bar-responsive{
+  width: 100%;
+}
+nav-bar-links{
+width: 300px;
+}
+
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#nav-bar-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #ffffff 2px solid;
+animation: nav-bar-links-animation 1s;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+@keyframes nav-bar-links-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  } 
+}
+
+#nav-bar-links a:hover{
+  color: #666666;
+  transition: 0.3s;
+  
+  border-bottom: #787070 2px solid;
+}
+
+#body-onsight-first{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#body-onsight-img{
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+}
+
+#body-onsight-img img{
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  animation: zoomInOut 1s ease;
+
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0.99) translateX(50px);
+    opacity: 0.8;
+  
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+
+
+#body-sight-text{
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  color: #000000;
+  animation-name: TextAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes TextAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#body-sight-text h1{
+  font-size: 50px;
+}
+
+#body-sight-text p{
+  font-size: 20px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.shop-stock-items{
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-stock-items-2{
+    margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.cards{
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 5%;
+  animation: cardAnimation 1s ease;
+}
+
+@keyframes cardAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cards img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  object-fit: cover;
+  transition: 1s;
+}
+
+
+.cards h5{
+  text-align: center;
+  width: 100%;
+  height: 10%  ;
+    position: relative;
+    top: -30px;
+    color: #000000;
+    font-size: 18px;
+    background-color: #787070;
+}
+
+.cards h5:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
