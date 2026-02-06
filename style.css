@@ -10,6 +10,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #nav-bar-responsive{
@@ -19,7 +20,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom:13px;
 }
 
 
@@ -39,16 +40,37 @@ height: 100%;
   border-radius: 50%;
   padding-left: 15px;
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
   padding-top: 15px;
   animation-name: logoAnimation;
   animation-duration: 1s;
 }
 
-#img-logo img{
-  width: 80px;
+#img-logo h5{
+font-weight: 600;
 }
+
+.by {
+  animation: byAnimation 2s alternate-reverse infinite;
+  width: 70%;
+    
+}
+
+@keyframes byAnimation {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+/* #img-logo img{
+  width: 80px;
+} */
 
 @media (max-width: 600px) {
   #img-logo {
@@ -72,28 +94,31 @@ width: 300px;
 @keyframes logoAnimation {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateX(-20px);
 
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
 #nav-bar-links a{
   text-decoration: none;
-  color: black;
+  /* color: black; */
+  /* color: #F5AFAF; */
+  color: hsl(315, 41%, 36%);
+
   font-size: 16px;
   padding-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  height: 97%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: #ffffff 2px solid;
-animation: nav-bar-links-animation 1s;
+  animation: nav-bar-links-animation 1s;
   font-family: Arial, Helvetica, sans-serif
 }
 
@@ -112,13 +137,12 @@ animation: nav-bar-links-animation 1s;
 #nav-bar-links a:hover{
   color: #666666;
   transition: 0.3s;
-  
   border-bottom: #787070 2px solid;
 }
 
 #body-onsight-first{
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -132,14 +156,23 @@ animation: nav-bar-links-animation 1s;
   margin: 50px;
 }
 
+.word-authentic{
+  color: hsl(315, 41%, 36%);
+  /* color: #F5AFAF; */
+
+}
+
 #body-onsight-img img{
   width: 100%;
-  height: 120%;
+  height: 100%;
+  overflow: hidden;
+
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   animation: zoomInOut 1s ease;
+
 
 }
 
@@ -193,6 +226,7 @@ animation: nav-bar-links-animation 1s;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
 }
 
 .shop-stock-items-2{
@@ -221,8 +255,13 @@ animation: nav-bar-links-animation 1s;
   width: 200px;
   height: 300px;
   margin: 20px;
-  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
   animation: cardAnimation 1s ease;
+  background-color: #f2eeee;
 }
 
 @keyframes cardAnimation {
@@ -238,28 +277,25 @@ animation: nav-bar-links-animation 1s;
 
 .cards img{
   width: 100%;
-  height: 100%;
-  border-radius: 10%;
-  object-fit: cover;
-  transition: 1s;
+  height: 95%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: contain;
 }
 
 
 .cards h5{
-  text-align: center;
-  width: 100%;
-  height: 10%  ;
+    text-align: center;
+    width: 100%;
+    height: 20%  ;
     position: relative;
-    top: -30px;
+    top: 0px;
     color: #000000;
     font-size: 18px;
-    background-color: #787070;
+    background-color: #ffffff;
 }
 
-.cards h5:hover{
-  background-color: #000000;
-  color: #ffffff;
-}
+
+
 
 
 
